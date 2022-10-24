@@ -5,7 +5,7 @@ const divRef = document.querySelector('#boxes');
 
 console.log(divRef);
 
-btnCreateRef.addEventListener('click', createBoxes);
+btnCreateRef.addEventListener('click', () => createBoxes(Number(inputRef.value)));
 btnDestroyRef.addEventListener('click', destroyBoxes);
 
 function getRandomHexColor() {
@@ -31,4 +31,4 @@ function destroyBoxes() {
   divRef.innerHTML = '';
 }
 
-createBoxes(5);
+// createBoxes(5);
